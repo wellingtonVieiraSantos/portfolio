@@ -14,7 +14,7 @@ const Portfolio = () => {
           <div className=' grid grid-cols-main gap-10'>
               <CardPortfolio
                 title='Snake Game'
-                srcImg='./src/assets/snakegame.jpeg'
+                srcImg='../public/snakegame.jpeg'
                 alt='snake game cover'
                 description='old cell phone snake game done with html, css and javascript'
                 hrefCode='https://github.com/wellingtonVieiraSantos/snake-game'
@@ -22,7 +22,7 @@ const Portfolio = () => {
               />
               <CardPortfolio
                 title='Pokedex'
-                srcImg='./src/assets/pokedex.png'
+                srcImg='../public/pokedex.png'
                 alt='pokedex cover'
                 description='Pokedex project using html, css, js and pokeapi.'
                 hrefCode='https://github.com/wellingtonVieiraSantos/pokedex'
@@ -30,7 +30,7 @@ const Portfolio = () => {
               />
               <CardPortfolio
                 title='Quiz Game'
-                srcImg='./src/assets/quizgame.png'
+                srcImg='../public/quizgame.png'
                 alt='quiz game cover'
                 description='old cell phone snake game done with html, css and javascript'
                 hrefCode='https://github.com/wellingtonVieiraSantos/Quiz_Javascript'

@@ -23,7 +23,7 @@ const Landing = () => {
       </FadeUp>
       <div className="hidden lg:block w-1/2">
         <FadeUp>
-          <img className="w-4/5" src="./src/assets/perfil2.png" alt="home cover" />
+          <img className="w-4/5" src="../public/perfil2.png" alt="home cover" />
         </FadeUp>
       </div>
     </section>

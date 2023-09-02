@@ -20,9 +20,9 @@ const CardPortfolio = (props) => {
       </div>
       <p className='sm:text-xl'>{props.description}</p>
       <div className='flex gap-2 justify-end'>
-        <span className='w-5'><img src="./src/assets/coloredIcons/html-5.png" alt="html 5 cover" /></span>
-        <span className='w-5'><img src="./src/assets/coloredIcons/css-3.png" alt="css 3 cover" /></span>
-        <span className='w-5'><img src="./src/assets/coloredIcons/js.png" alt=" javascript cover" /></span>
+        <span className='w-5'><img src="../public/coloredIcons/html-5.png" alt="html 5 cover" /></span>
+        <span className='w-5'><img src="../public/coloredIcons/css-3.png" alt="css 3 cover" /></span>
+        <span className='w-5'><img src="../public/coloredIcons/js.png" alt=" javascript cover" /></span>
       </div>
     </div>
   )
