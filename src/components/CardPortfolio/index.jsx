@@ -1,6 +1,10 @@
 import { FaGithub } from 'react-icons/fa'
 import { BiLinkExternal } from 'react-icons/bi'
 
+import html from '../../assets/coloredIcons/html-5.png'
+import css from '../../assets/coloredIcons/css-3.png'
+import js from '../../assets/coloredIcons/js.png'
+
 const CardPortfolio = (props) => {
   return (
     <div className='w-full p-2 flex flex-col gap-3 hover:scale-110 transition-all'>
@@ -20,9 +24,9 @@ const CardPortfolio = (props) => {
       </div>
       <p className='sm:text-xl'>{props.description}</p>
       <div className='flex gap-2 justify-end'>
-        <span className='w-5'><img src="../public/coloredIcons/html-5.png" alt="html 5 cover" /></span>
-        <span className='w-5'><img src="../public/coloredIcons/css-3.png" alt="css 3 cover" /></span>
-        <span className='w-5'><img src="../public/coloredIcons/js.png" alt=" javascript cover" /></span>
+        <span className='w-5'><img src={html} alt="html 5 cover" /></span>
+        <span className='w-5'><img src={css} alt="css 3 cover" /></span>
+        <span className='w-5'><img src={js} alt=" javascript cover" /></span>
       </div>
     </div>
   )

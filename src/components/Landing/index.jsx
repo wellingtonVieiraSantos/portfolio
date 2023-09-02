@@ -1,5 +1,7 @@
 import FadeUp from "../FadeUp"
 
+import perfil from '../../assets/perfil2.png'
+
 const Landing = () => {
   return (
     <section className="h-screen w-full flex justify-center items-center p-4">
@@ -23,7 +25,7 @@ const Landing = () => {
       </FadeUp>
       <div className="hidden lg:block w-1/2">
         <FadeUp>
-          <img className="w-4/5" src="../public/perfil2.png" alt="home cover" />
+          <img className="w-4/5" src={perfil} alt="home cover" />
         </FadeUp>
       </div>
     </section>

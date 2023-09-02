@@ -1,6 +1,10 @@
 import CardPortfolio from '../CardPortfolio'
 import FadeUp from '../FadeUp'
 
+import snakegame from '../../assets/snakegame.jpeg'
+import pokedex from '../../assets/pokedex.png'
+import quizgame from '../../assets/quizgame.png'
+
 const Portfolio = () => {
 
   //criar integração com api do github posteriormente
@@ -14,7 +18,7 @@ const Portfolio = () => {
           <div className=' grid grid-cols-main gap-10'>
               <CardPortfolio
                 title='Snake Game'
-                srcImg='../public/snakegame.jpeg'
+                srcImg={snakegame}
                 alt='snake game cover'
                 description='old cell phone snake game done with html, css and javascript'
                 hrefCode='https://github.com/wellingtonVieiraSantos/snake-game'
@@ -22,7 +26,7 @@ const Portfolio = () => {
               />
               <CardPortfolio
                 title='Pokedex'
-                srcImg='../public/pokedex.png'
+                srcImg={pokedex}
                 alt='pokedex cover'
                 description='Pokedex project using html, css, js and pokeapi.'
                 hrefCode='https://github.com/wellingtonVieiraSantos/pokedex'
@@ -30,7 +34,7 @@ const Portfolio = () => {
               />
               <CardPortfolio
                 title='Quiz Game'
-                srcImg='../public/quizgame.png'
+                srcImg={quizgame}
                 alt='quiz game cover'
                 description='old cell phone snake game done with html, css and javascript'
                 hrefCode='https://github.com/wellingtonVieiraSantos/Quiz_Javascript'
