@@ -15,9 +15,9 @@ const NavBar = () => {
         <li className="w-full h-20 hover:drop-shadow-main-hover cursor-pointer flex justify-center items-center">
           <a href="#about"><span className="inline-block rotate-90">About</span></a></li>
         <li className="w-full h-20 hover:drop-shadow-main-hover cursor-pointer flex justify-center items-center">
-          <a href="#about"><span className="inline-block rotate-90">Portfolio</span></a></li>
+          <a href="#portfolio"><span className="inline-block rotate-90">Portfolio</span></a></li>
         <li className="w-full h-20 hover:drop-shadow-main-hover cursor-pointer flex justify-center items-center">
-          <a href="#about"><span className="inline-block rotate-90">Contact</span></a></li>
+          <a href="#contact"><span className="inline-block rotate-90">Contact</span></a></li>
       </ul>
     </nav>
   )
