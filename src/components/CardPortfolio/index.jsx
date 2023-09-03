@@ -7,7 +7,7 @@ import js from '../../assets/coloredIcons/js.png'
 
 const CardPortfolio = (props) => {
   return (
-    <div className='w-full p-2 flex flex-col gap-3 hover:scale-110 transition-all'>
+    <div className='w-full p-2 flex flex-col gap-3 '>
       <div className='w-full aspect-square overflow-hidden'>
         <img src={props.srcImg} alt={props.alt} className=''/>
       </div>

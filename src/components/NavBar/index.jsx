@@ -11,10 +11,13 @@ const NavBar = () => {
           <span>/&#62;</span>
         </div>
       </a>
-      <ul className="h-2/3 flex flex-col py-4 gap-10 md:gap-20 drop-shadow-main text-sm md:text-xl">
-        <li className="py-4 hover:drop-shadow-main-hover cursor-pointer rotate-90"><a href="#about">About</a></li>
-        <li className="py-4 hover:drop-shadow-main-hover cursor-pointer rotate-90"><a href="#portfolio">Portfolio</a></li>
-        <li className="py-4 hover:drop-shadow-main-hover cursor-pointer rotate-90"><a href="#contact">Contact</a></li>
+      <ul className="h-2/3 flex flex-col py-4 gap-10 md:gap-20 drop-shadow-main text-sm md:text-xl ">
+        <li className="w-full h-20 hover:drop-shadow-main-hover cursor-pointer flex justify-center items-center">
+          <a href="#about"><span className="inline-block rotate-90">About</span></a></li>
+        <li className="w-full h-20 hover:drop-shadow-main-hover cursor-pointer flex justify-center items-center">
+          <a href="#about"><span className="inline-block rotate-90">Portfolio</span></a></li>
+        <li className="w-full h-20 hover:drop-shadow-main-hover cursor-pointer flex justify-center items-center">
+          <a href="#about"><span className="inline-block rotate-90">Contact</span></a></li>
       </ul>
     </nav>
   )

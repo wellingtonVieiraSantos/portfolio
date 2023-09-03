@@ -4,10 +4,10 @@ import perfil from '../../assets/perfil2.png'
 
 const Landing = () => {
   return (
-    <section className="h-screen w-full flex justify-center items-center p-4">
+    <section className="h-screen flex justify-center items-center p-4">
       <FadeUp>
         <div className="text-slate-100 cursor-default">
-          <h1 className="text-5xl md:text-7xl xl:text-8xl">
+          <h1 className="text-4xl md:text-7xl xl:text-8xl">
             <p>Hi,</p>
             <p>I am
               <span className="text-violet-500 hover:drop-shadow-main transition-all"> Ton</span>,

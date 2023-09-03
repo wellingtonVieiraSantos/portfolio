@@ -11,7 +11,8 @@ export default {
         'main-hover': '0 0 30px rgba(255,255,255)'
       },
       gridTemplateColumns:{
-        'main': 'repeat(auto-fill, minmax(300px, 1fr))'
+        /* possivel problema para resoluções menores que 290px */
+        'main': 'repeat(auto-fill, minmax(250px, 1fr))'
       }
     },
   },

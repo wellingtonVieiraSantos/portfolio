@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className=" bg-slate-900 flex">
         <NavBar/>
-        <main className="min-h-screen w-screen flex flex-col">
+        <main className="min-h-screen w-screen md:w-[calc(100vw-80px)] flex flex-col">
           <SocialMediaBar/>
           <Landing/>
           <About/>

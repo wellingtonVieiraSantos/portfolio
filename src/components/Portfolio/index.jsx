@@ -1,7 +1,7 @@
 import CardPortfolio from '../CardPortfolio'
 import FadeUp from '../FadeUp'
 
-import snakegame from '../../assets/snakegame.jpeg'
+import snakegame from '../../assets/snakegame.png'
 import pokedex from '../../assets/pokedex.png'
 import quizgame from '../../assets/quizgame.png'
 
@@ -9,13 +9,13 @@ const Portfolio = () => {
 
   //criar integração com api do github posteriormente
   return (
-    <section className='bg-slate-900 flex flex-col text-slate-100 pb-5' id='portfolio'>
+    <section className='max-w-[calc(100vw-40px)] bg-slate-900 text-slate-100 pb-5' id='portfolio'>
       <div className='w-[min(1000px,100%)] flex flex-col m-auto'>
         <FadeUp>
           <h2 className='text-3xl text-violet-500 font-semibold p-5'>Portfolio</h2>
         </FadeUp>
-        <FadeUp>
-          <div className=' grid grid-cols-main gap-10'>
+          <div className='grid grid-cols-main gap-10'>
+            <FadeUp>
               <CardPortfolio
                 title='Snake Game'
                 srcImg={snakegame}
@@ -24,6 +24,8 @@ const Portfolio = () => {
                 hrefCode='https://github.com/wellingtonVieiraSantos/snake-game'
                 hrefPage='http://wellingtonvieirasantos.github.io/snake-game/'
               />
+            </FadeUp>
+            <FadeUp>
               <CardPortfolio
                 title='Pokedex'
                 srcImg={pokedex}
@@ -32,6 +34,8 @@ const Portfolio = () => {
                 hrefCode='https://github.com/wellingtonVieiraSantos/pokedex'
                 hrefPage='https://pokedex-i4xtzv95l-wellingtonvieirasantos.vercel.app'
               />
+            </FadeUp>
+            <FadeUp>
               <CardPortfolio
                 title='Quiz Game'
                 srcImg={quizgame}
@@ -40,8 +44,8 @@ const Portfolio = () => {
                 hrefCode='https://github.com/wellingtonVieiraSantos/Quiz_Javascript'
                 hrefPage='https://wellingtonvieirasantos.github.io/Quiz_Javascript/'
               />
+            </FadeUp>
           </div>
-        </FadeUp>
       </div>
     </section>
   )
