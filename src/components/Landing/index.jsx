@@ -4,7 +4,7 @@ import perfil from '../../assets/perfil2.png'
 
 const Landing = () => {
   return (
-    <section className="h-screen flex justify-center items-center p-4">
+    <section className="h-screen flex justify-around items-center p-4">
       <FadeUp>
         <div className="text-slate-100 cursor-default">
           <h1 className="text-4xl md:text-7xl xl:text-8xl">
@@ -23,9 +23,9 @@ const Landing = () => {
           </a>
         </div>
       </FadeUp>
-      <div className="hidden lg:block w-1/2">
+      <div className="hidden lg:block">
         <FadeUp>
-          <img className="w-4/5" src={perfil} alt="home cover" />
+          <img src={perfil} alt="home cover" />
         </FadeUp>
       </div>
     </section>

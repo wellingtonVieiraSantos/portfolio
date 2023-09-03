@@ -7,8 +7,8 @@ import js from '../../assets/coloredIcons/js.png'
 
 const CardPortfolio = (props) => {
   return (
-    <div className='w-full p-2 flex flex-col gap-3 '>
-      <div className='w-full aspect-square overflow-hidden'>
+    <div className='p-2 flex flex-col gap-3 '>
+      <div className='aspect-square overflow-hidden'>
         <img src={props.srcImg} alt={props.alt} className=''/>
       </div>
       <div className='flex justify-between items-center text-2xl text-violet-400'>
