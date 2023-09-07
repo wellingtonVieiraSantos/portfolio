@@ -11,9 +11,9 @@ const About = () => {
     <section className='bg-slate-950 flex text-slate-100 ' id='about'>
       <div className='flex flex-col p-5 w-[min(1000px,100%)] m-auto'>
         <FadeUp>
-          <h2 className='text-3xl text-violet-500 font-semibold'>About</h2>
+          <h2 className='text-4xl text-violet-500 font-bold'>About</h2>
         </FadeUp>
-        <div className='p-4 text-sm sm:text-xl'>
+        <div className='p-4 sm:text-xl'>
           <FadeUp>
             <p className='mb-4'>Hi, my name is Wellington.</p>
           </FadeUp>
@@ -33,22 +33,22 @@ const About = () => {
           </FadeUp>
         </div>
         <FadeUp>
-          <h3 className='text-lg font-bold'>Technologies (focus):</h3>
+          <h3 className='text-lg font-bold'>Technologies (focused):</h3>
         </FadeUp>
         <FadeUp>
-          <div className='w-full flex p-3 flex-wrap text-violet-500 font-bold'>
+          <div className='w-full flex p-3 flex-wrap text-violet-400 font-bold'>
             {tecnologies.focus && tecnologies.focus.map(tec => (
-              <span className='border border-violet-500 rounded-2xl p-2 m-1' key={tec}>{tec}</span>
+              <span className='border border-violet-900 p-2 m-2 shadow-main shadow-violet-800' key={tec}>{tec}</span>
             ))}
           </div>
         </FadeUp>
         <FadeUp>
-          <h3 className='text-lg font-bold'>Technologies (seen):</h3>
+          <h3 className='text-lg font-bold'>Technologies (studied):</h3>
         </FadeUp>
         <FadeUp>
-          <div className='w-full flex p-3 flex-wrap text-violet-500 font-bold'>
+          <div className='w-full flex p-3 flex-wrap text-violet-400 font-bold'>
             {tecnologies.seen && tecnologies.seen.map(tec => (
-              <span className='border border-violet-500 rounded-2xl p-2 m-1' key={tec}>{tec}</span>
+              <span className='border border-violet-900 p-2 m-2 shadow-main shadow-violet-800' key={tec}>{tec}</span>
             ))}
           </div>
         </FadeUp>

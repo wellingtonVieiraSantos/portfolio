@@ -12,7 +12,7 @@ const Portfolio = () => {
     <section className='bg-slate-900 text-slate-100 pb-5' id='portfolio'>
       <div className='w-[min(1000px,100%)] flex flex-col m-auto'>
         <FadeUp>
-          <h2 className='text-3xl text-violet-500 font-semibold p-5'>Portfolio</h2>
+          <h2 className='text-4xl text-violet-500 font-bold p-5'>Portfolio</h2>
         </FadeUp>
           <div className='grid grid-cols-main gap-10'>
             <FadeUp>
@@ -20,7 +20,7 @@ const Portfolio = () => {
                 title='Snake Game'
                 srcImg={snakegame}
                 alt='snake game cover'
-                description='old cell phone snake game done with html, css and javascript'
+                description='Old cell phone snake game done with html, css and js'
                 hrefCode='https://github.com/wellingtonVieiraSantos/snake-game'
                 hrefPage='http://wellingtonvieirasantos.github.io/snake-game/'
               />
@@ -40,7 +40,7 @@ const Portfolio = () => {
                 title='Quiz Game'
                 srcImg={quizgame}
                 alt='quiz game cover'
-                description='old cell phone snake game done with html, css and javascript'
+                description='Simple quiz using html, css, js without backend.'
                 hrefCode='https://github.com/wellingtonVieiraSantos/Quiz_Javascript'
                 hrefPage='https://wellingtonvieirasantos.github.io/Quiz_Javascript/'
               />

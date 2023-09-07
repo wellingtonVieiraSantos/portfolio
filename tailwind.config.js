@@ -13,6 +13,9 @@ export default {
       gridTemplateColumns:{
         /* possivel problema para resoluções menores que 290px */
         'main': 'repeat(auto-fill, minmax(250px, 1fr))'
+      },
+      boxShadow:{
+        'main': '4px 4px 0 rgba(255,255,255)'
       }
     },
   },

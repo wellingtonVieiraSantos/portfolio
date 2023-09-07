@@ -1,23 +1,31 @@
+import { GrMenu, GrClose } from 'react-icons/gr'
 
-const NavBar = () => {
+const NavBar = ({handleMenu, isOpen}) => {
 
   return (
-    <nav className="h-screen w-10 text-violet-500 font-bold
-      text-lg flex flex-col sticky top-0 left-0 md:w-20 md:text-3xl">
+    <nav className="w-full h-20 text-violet-500 font-bold
+      text-lg flex justify-between items-center sticky top-0 left-0 backdrop-blur z-20 md:pr-4">
       <a href="#">
-        <div className="w-8 py-2 mb-8 flex items-center justify-between drop-shadow-main">
+        <div className="px-2 aspect-square flex items-center justify-between drop-shadow-main">
           <span>&#60;</span>
-          <span className="text-sm md:text-3xl text-slate-100">T</span>
+          <span className="text-5xl text-slate-100">T</span>
           <span>/&#62;</span>
         </div>
       </a>
-      <ul className="h-2/3 flex flex-col py-4 gap-10 md:gap-20 drop-shadow-main text-sm md:text-xl ">
-        <li className="h-20 hover:drop-shadow-main-hover cursor-pointer flex justify-center items-center">
-          <a href="#about"><span className="inline-block rotate-90">About</span></a></li>
-        <li className="h-20 hover:drop-shadow-main-hover cursor-pointer flex justify-center items-center">
-          <a href="#portfolio"><span className="inline-block rotate-90">Portfolio</span></a></li>
-        <li className="h-20 hover:drop-shadow-main-hover cursor-pointer flex justify-center items-center">
-          <a href="#contact"><span className="inline-block rotate-90">Contact</span></a></li>
+      <div onClick={handleMenu}
+      className="w-10 mr-3 aspect-square border border-violet-900 md:hidden flex justify-center items-center">
+        {isOpen ?
+        <GrClose className='text-2xl invert'/> :
+        <GrMenu className='text-3xl invert'/>
+      }
+      </div>
+      <ul className="hidden md:flex py-4 gap-10 md:gap-20 drop-shadow-main text-sm md:text-xl ">
+        <li className="hover:drop-shadow-main-hover cursor-pointer flex justify-center items-center">
+          <a href="#about"><span>About</span></a></li>
+        <li className="hover:drop-shadow-main-hover cursor-pointer flex justify-center items-center">
+          <a href="#portfolio"><span>Portfolio</span></a></li>
+        <li className="hover:drop-shadow-main-hover cursor-pointer flex justify-center items-center">
+          <a href="#contact"><span>Contact</span></a></li>
       </ul>
     </nav>
   )

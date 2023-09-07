@@ -17,7 +17,7 @@ const FadeUp = ({children}) => {
   },[isInView])
 
   const variants={
-    hidden:{opacity:0, y: 200},
+    hidden:{opacity:0, y: 50},
     visible:{opacity:1, y: 0}
   }
 
@@ -27,7 +27,7 @@ const FadeUp = ({children}) => {
         variants={variants}
         initial='hidden'
         animate={mainControls}
-        transition={{duration: 1, delay: .5}}
+        transition={{duration: .5, delay: .25}}
       >
         {children}
       </motion.div>
