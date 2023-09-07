@@ -1,22 +1,20 @@
 import FadeUp from "../FadeUp"
 
-import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa'
-
-import perfil from '../../assets/perfil.png'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 const Landing = () => {
   return (
-    <section className="h-screen flex justify-around items-center p-4">
+    <section className="h-screen flex justify-center items-center">
       <FadeUp>
         <div className="text-slate-100 cursor-default">
-          <h1 className="text-3xl md:text-7xl xl:text-8xl font-bold">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl xl:text-8xl font-bold tracking-tight leading-loose sm:leading-relaxed md:leading-relaxed xl:leading-normal">
             <p>Hi,</p>
             <p>i'm
-              <span className="text-5xl md:text-8xl xl:text-9xl text-purple-500 hover:drop-shadow-main transition-all"> Ton</span>,
+              <span className="text-5xl sm:text-7xl md:text-8xl xl:text-9xl text-purple-500 hover:drop-shadow-main transition-all"> Ton</span>,
             </p>
             <p>web developer!</p>
           </h1>
-          <p className="my-4 text-sm">React.js Programmer.</p>
+          <p className="my-4 text-xl font-bold text-purple-400">React.js Programmer.</p>
           <div className="flex text-violet-500 gap-5">
             <a href="https://linkedin.com/in/wellingtonsantos2022/" target='_blank' rel='external'
               className="w-28 border border-violet-900 px-6 py-1 shadow-main shadow-violet-800 flex justify-center">
@@ -29,11 +27,6 @@ const Landing = () => {
           </div>
         </div>
       </FadeUp>
-      <div className="hidden lg:block w-2/5">
-        <FadeUp>
-          <img src={perfil} alt="home cover" />
-        </FadeUp>
-      </div>
     </section>
   )
 }

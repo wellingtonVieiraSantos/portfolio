@@ -11,7 +11,7 @@ const RespMenu = ({handleMenu}) => {
   }
   return (
     <div className="w-screen h-[calc(100vh-80px)] bg-white sticky top-0 z-10">
-        <ul className="h-full bg-slate-900 flex flex-col justify-center items-center text-white gap-10 text-xl font-semibold" onClick={handleMenu}>
+        <ul className="h-full bg-slate-950 flex flex-col justify-center items-center text-white gap-10 text-xl font-semibold" onClick={handleMenu}>
           <motion.div
             variants={variants}
             initial='hiddenTop'

@@ -3,8 +3,8 @@ import { GrMenu, GrClose } from 'react-icons/gr'
 const NavBar = ({handleMenu, isOpen}) => {
 
   return (
-    <nav className="w-full h-20 text-violet-500 font-bold
-      text-lg flex justify-between items-center sticky top-0 left-0 backdrop-blur z-20 md:pr-4">
+    <nav className="w-full h-20 text-violet-500 font-bold bg-slate-950
+      text-lg flex justify-between items-center sticky top-0 left-0 md:bg-transparent md:backdrop-blur z-20 md:pr-4">
       <a href="#">
         <div className="px-2 aspect-square flex items-center justify-between drop-shadow-main">
           <span>&#60;</span>
