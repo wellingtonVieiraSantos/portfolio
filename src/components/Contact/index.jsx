@@ -9,13 +9,13 @@ const Contact = ({ handleCopy, text, isCopy}) => {
         {isCopy ?
           <div
             onClick={handleCopy}
-            className='w-60 flex items-center p-2 gap-8 border shadow-main border-green-900 shadow-green-800'>
+            className='w-60 flex items-center p-2 gap-8 border shadow-main border-green-900 shadow-green-800 cursor-wait'>
               <RiMailCheckLine className='text-xl'/>
             <span ref={text}>Copied</span>
           </div> :
           <div
             onClick={handleCopy}
-            className='w-60 flex items-center p-2 gap-2 border border-violet-900 shadow-main shadow-violet-800'>
+            className='w-60 flex items-center p-2 gap-2 border border-violet-900 shadow-main shadow-violet-800 cursor-pointer'>
               <RiMailAddLine className='text-xl'/>
             <span ref={text}>wtvsantos@gmail.com</span>
           </div>
