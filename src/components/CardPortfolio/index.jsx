@@ -2,6 +2,8 @@ import { FaGithub } from 'react-icons/fa'
 import { BiLinkExternal } from 'react-icons/bi'
 
 const CardPortfolio = (props) => {
+
+  const teste = 'react'
   return (
     <div className='p-2 flex flex-col gap-3 '>
       <div className='aspect-square overflow-hidden'>
@@ -19,9 +21,13 @@ const CardPortfolio = (props) => {
         </div>
       </div>
       <p className='sm:text-xl'>{props.description}</p>
-      <div className='flex gap-3 justify-end items-center'>
+      <div className='flex gap-5 justify-end items-center'>
         {props.tecnologies.map(tec =>(
-          <span key={tec.src} className='w-7'><img src={tec.src} alt={tec.alt} /></span>
+          <span datatype={tec.alt} key={tec.src}
+          className='w-7 text-violet-500 font-bold relative after:absolute hover:after:content-[attr(datatype)]
+          hover:after:border after:border-violet-500 after:p-2 after:right-0 after:mt-3 hover:after:bg-slate-950 '>
+            <img src={tec.src} alt={`${tec.alt} icon`} />
+          </span>
         ))}
       </div>
     </div>

@@ -17,7 +17,7 @@ const Portfolio = () => {
 
   //criar integração com api do github posteriormente
   return (
-    <section className='bg-slate-900 text-slate-100 pb-5' id='portfolio'>
+    <section className='bg-slate-900 text-slate-100 pb-10' id='portfolio'>
       <div className='w-[min(1000px,100%)] flex flex-col m-auto'>
         <FadeUp>
           <h2 className='text-4xl text-violet-500 font-bold p-5'>Portfolio</h2>
@@ -33,9 +33,9 @@ const Portfolio = () => {
                 hrefPage='https://quiz-react-ton.vercel.app'
                 tecnologies={
                   [
-                    {'src':react, 'alt':'react icon'},
-                    {'src':tailwindcss, 'alt':'tailwindCss icon'},
-                    {'src':reactRouterDom, 'alt': 'react-router-dom icon'}
+                    {'src':react, 'alt':'React'},
+                    {'src':tailwindcss, 'alt':'TailwindCss'},
+                    {'src':reactRouterDom, 'alt':'React router'}
                   ]}
               />
             </FadeUp>
@@ -48,9 +48,9 @@ const Portfolio = () => {
                 hrefCode='https://github.com/wellingtonVieiraSantos/snake-game'
                 hrefPage='http://wellingtonvieirasantos.github.io/snake-game/'
                 tecnologies={[
-                  {'src':html, 'alt':'html icon'},
-                  {'src':css, 'alt':'css icon'},
-                  {'src':js, 'alt': 'javaScript icon'}
+                  {'src':html, 'alt':'HTML'},
+                  {'src':css, 'alt':'CSS'},
+                  {'src':js, 'alt': 'JavaScript'}
                 ]}
               />
             </FadeUp>
@@ -63,9 +63,9 @@ const Portfolio = () => {
                 hrefCode='https://github.com/wellingtonVieiraSantos/pokedex'
                 hrefPage='https://pokedex-i4xtzv95l-wellingtonvieirasantos.vercel.app'
                 tecnologies={[
-                  {'src':html, 'alt':'html icon'},
-                  {'src':css, 'alt':'css icon'},
-                  {'src':js, 'alt': 'javaScript icon'}
+                  {'src':html, 'alt':'HTML'},
+                  {'src':css, 'alt':'CSS'},
+                  {'src':js, 'alt': 'JavaScript'}
                 ]}
               />
             </FadeUp>
@@ -78,9 +78,9 @@ const Portfolio = () => {
                 hrefCode='https://github.com/wellingtonVieiraSantos/Quiz_Javascript'
                 hrefPage='https://wellingtonvieirasantos.github.io/Quiz_Javascript/'
                 tecnologies={[
-                  {'src':html, 'alt':'html icon'},
-                  {'src':css, 'alt':'css icon'},
-                  {'src':js, 'alt': 'javaScript icon'}
+                  {'src':html, 'alt':'HTML'},
+                  {'src':css, 'alt':'CSS'},
+                  {'src':js, 'alt': 'JavaScript'}
                 ]}
               />
             </FadeUp>
