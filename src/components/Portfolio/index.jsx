@@ -3,8 +3,8 @@ import FadeUp from '../FadeUp'
 
 import snakegame from '../../assets/snakegame.png'
 import pokedex from '../../assets/pokedex.png'
-import quizgame from '../../assets/quizgame.png'
 import quiz from '../../assets/portugueseQuiz.png'
+import weather from '../../assets/weatherapp.png'
 
 import html from '../../assets/coloredIcons/html5.svg'
 import css from '../../assets/coloredIcons/css3.svg'
@@ -12,6 +12,7 @@ import js from '../../assets/coloredIcons/js.svg'
 import react from '../../assets/coloredIcons/react.svg'
 import tailwindcss from '../../assets/coloredIcons/tailwindcss.svg'
 import reactRouterDom from '../../assets/coloredIcons/react-router.svg'
+import api from '../../assets/coloredIcons/api.svg'
 
 const Portfolio = () => {
 
@@ -20,9 +21,24 @@ const Portfolio = () => {
     <section className='bg-slate-900 text-slate-100 pb-10' id='portfolio'>
       <div className='w-[min(1000px,100%)] flex flex-col m-auto'>
         <FadeUp>
-          <h2 className='text-4xl text-violet-500 font-bold p-5'>Portfolio</h2>
+          <h2 className='text-4xl text-secondary font-bold p-5'>Portfolio</h2>
         </FadeUp>
           <div className='grid grid-cols-main gap-10'>
+          <FadeUp>
+              <CardPortfolio
+                title='Weather App'
+                srcImg={weather}
+                alt='weather cover'
+                description='Simple responsive weather app by open-meteo'
+                hrefCode='https://github.com/wellingtonVieiraSantos/weather-app'
+                hrefPage='https://weather-app-delta-amber.vercel.app'
+                tecnologies={[
+                  {'src':react, 'alt':'React'},
+                  {'src':tailwindcss, 'alt':'TailwindCss'},
+                  {'src':api, 'alt': 'Api'}
+                ]}
+              />
+            </FadeUp>
             <FadeUp>
               <CardPortfolio
                 title='Portuguese Quiz'
@@ -62,21 +78,6 @@ const Portfolio = () => {
                 description='Pokedex project using html, css, js and pokeapi.'
                 hrefCode='https://github.com/wellingtonVieiraSantos/pokedex'
                 hrefPage='https://pokedex-i4xtzv95l-wellingtonvieirasantos.vercel.app'
-                tecnologies={[
-                  {'src':html, 'alt':'HTML'},
-                  {'src':css, 'alt':'CSS'},
-                  {'src':js, 'alt': 'JavaScript'}
-                ]}
-              />
-            </FadeUp>
-            <FadeUp>
-              <CardPortfolio
-                title='Quiz Game'
-                srcImg={quizgame}
-                alt='quiz game cover'
-                description='Simple quiz using html, css, js without backend.'
-                hrefCode='https://github.com/wellingtonVieiraSantos/Quiz_Javascript'
-                hrefPage='https://wellingtonvieirasantos.github.io/Quiz_Javascript/'
                 tecnologies={[
                   {'src':html, 'alt':'HTML'},
                   {'src':css, 'alt':'CSS'},

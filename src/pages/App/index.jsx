@@ -12,7 +12,7 @@ const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isCopy, setIsCopy] = useState(false)
 
-  const text = useRef('null')
+  const text = useRef(null)
 
   const handleMenu = () => {
     setIsOpen(prevState => !prevState)
@@ -29,7 +29,7 @@ const Home = () => {
   }
 
   return (
-    <div className=" bg-slate-950 flex flex-col">
+    <div className=" bg-slate-900 flex flex-col">
       <NavBar handleMenu={handleMenu} isOpen={isOpen}/>
         {isOpen ?
           <RespMenu handleMenu={handleMenu}/> :
@@ -38,7 +38,7 @@ const Home = () => {
             <About/>
             <Portfolio/>
             <Contact handleCopy={handleCopy} text={text} isCopy={isCopy}/>
-            <div className='h-10 bg-slate-900 flex justify-center p-4 text-xs text-slate-300'>Created by Ton</div>
+            <div className='h-10 bg-slate-900 flex justify-center items-center text-sm text-slate-200'>Created by Ton</div>
           </main>
         }
     </div>

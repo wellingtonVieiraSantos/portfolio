@@ -15,7 +15,11 @@ export default {
         'main': 'repeat(auto-fill, minmax(250px, 1fr))'
       },
       boxShadow:{
-        'main': '4px 4px 0 rgba(255,255,255)'
+        'main': '2px 2px 0 rgba(255,255,255)'
+      },
+      colors:{
+        primary: '#',
+        secondary: '#FE5F2F'
       }
     },
   },

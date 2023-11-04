@@ -3,19 +3,18 @@ import { BiLinkExternal } from 'react-icons/bi'
 
 const CardPortfolio = (props) => {
 
-  const teste = 'react'
   return (
-    <div className='p-2 flex flex-col gap-3 '>
+    <div className='p-2 flex flex-col gap-3'>
       <div className='aspect-square overflow-hidden'>
         <img src={props.srcImg} alt={props.alt} className=''/>
       </div>
-      <div className='flex justify-between items-center text-2xl text-violet-400'>
+      <div className='flex justify-between items-center text-2xl text-secondary/60'>
         <h3>{props.title}</h3>
         <div className='flex gap-2 '>
-          <a href={props.hrefCode} target='_blank' rel='author'>
+          <a href={props.hrefCode} target='_blank' rel='author' className='hover:text-secondary'>
             <FaGithub/>
           </a>
-          <a href={props.hrefPage} target='_blank' rel='author'>
+          <a href={props.hrefPage} target='_blank' rel='author' className='hover:text-secondary'>
             <BiLinkExternal/>
           </a>
         </div>
@@ -24,8 +23,8 @@ const CardPortfolio = (props) => {
       <div className='flex gap-5 justify-end items-center'>
         {props.tecnologies.map(tec =>(
           <span datatype={tec.alt} key={tec.src}
-          className='w-7 text-violet-500 font-bold relative after:absolute hover:after:content-[attr(datatype)]
-          hover:after:border after:border-violet-500 after:p-2 after:right-0 after:mt-3 hover:after:bg-slate-950 '>
+          className='w-7 text-slate-200 font-bold relative after:absolute hover:after:content-[attr(datatype)]
+          hover:after:border after:border-secondary after:rounded-lg after:p-2 after:right-0 after:mt-3 hover:after:bg-slate-950 '>
             <img src={tec.src} alt={`${tec.alt} icon`} />
           </span>
         ))}

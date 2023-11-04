@@ -11,9 +11,9 @@ const About = () => {
     <section className='bg-slate-950 flex text-slate-100 ' id='about'>
       <div className='flex flex-col p-5 w-[min(1000px,100%)] m-auto'>
         <FadeUp>
-          <h2 className='text-4xl text-violet-500 font-bold'>About</h2>
+          <h2 className='text-4xl text-secondary font-bold'>About</h2>
         </FadeUp>
-        <div className='p-4 sm:text-xl'>
+        <div className='p-4 sm:text-xl text-justify'>
           <FadeUp>
             <p className='mb-4'>Hi, my name is Wellington.</p>
           </FadeUp>
@@ -33,22 +33,22 @@ const About = () => {
           </FadeUp>
         </div>
         <FadeUp>
-          <h3 className='text-lg font-bold'>Technologies (focused):</h3>
+          <h3 className='text-lg font-bold '>Technologies ( <span className="text-secondary">focused</span> ):</h3>
         </FadeUp>
         <FadeUp>
-          <div className='w-full flex p-3 flex-wrap text-violet-400 font-bold'>
+          <div className='w-full flex p-3 flex-wrap text-slate-200 font-bold'>
             {tecnologies.focus && tecnologies.focus.map(tec => (
-              <span className='border border-violet-900 p-2 m-2 shadow-main shadow-violet-800' key={tec}>{tec}</span>
+              <span className='border border-secondary p-2 m-2 shadow-main shadow-secondary rounded-lg cursor-default' key={tec}>{tec}</span>
             ))}
           </div>
         </FadeUp>
         <FadeUp>
-          <h3 className='text-lg font-bold'>Technologies (studied):</h3>
+          <h3 className='text-lg font-bold'>Technologies ( <span className="text-secondary">studied</span> ):</h3>
         </FadeUp>
         <FadeUp>
-          <div className='w-full flex p-3 flex-wrap text-violet-400 font-bold'>
+          <div className='w-full flex p-3 flex-wrap text-slate-200 font-bold'>
             {tecnologies.seen && tecnologies.seen.map(tec => (
-              <span className='border border-violet-900 p-2 m-2 shadow-main shadow-violet-800' key={tec}>{tec}</span>
+              <span className='border border-secondary p-2 m-2 shadow-main shadow-secondary rounded-lg cursor-default' key={tec}>{tec}</span>
             ))}
           </div>
         </FadeUp>
