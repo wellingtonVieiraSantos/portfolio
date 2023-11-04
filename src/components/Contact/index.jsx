@@ -1,5 +1,7 @@
 import { RiMailAddLine, RiMailCheckLine } from 'react-icons/ri'
 
+import p from 'prop-types'
+
 const Contact = ({ handleCopy, text, isCopy}) => {
   return (
     <section className='bg-slate-950 flex text-slate-100' id='contact'>
@@ -26,3 +28,9 @@ const Contact = ({ handleCopy, text, isCopy}) => {
 }
 
 export default Contact
+
+Contact.propTypes = {
+  handleCopy: p.func.isRequired,
+  text: p.element.isRequired,
+  isCopy: p.bool.isRequired
+}

@@ -1,5 +1,7 @@
 import { GrMenu, GrClose } from 'react-icons/gr'
 
+import p from 'prop-types'
+
 const NavBar = ({handleMenu, isOpen}) => {
 
   const menu = ['Home', 'About', 'Portfolio', 'Contact']
@@ -33,3 +35,8 @@ const NavBar = ({handleMenu, isOpen}) => {
 }
 
 export default NavBar
+
+NavBar.propTypes = {
+  handleMenu: p.func.isRequired,
+  isOpen: p.bool.isRequired
+}

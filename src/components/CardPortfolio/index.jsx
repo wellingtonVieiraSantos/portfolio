@@ -1,6 +1,8 @@
 import { FaGithub } from 'react-icons/fa'
 import { BiLinkExternal } from 'react-icons/bi'
 
+import p from 'prop-types'
+
 const CardPortfolio = (props) => {
 
   return (
@@ -34,3 +36,19 @@ const CardPortfolio = (props) => {
 }
 
 export default CardPortfolio
+
+CardPortfolio.propTypes = {
+  props: p.shape({
+    title: p.string.isRequired,
+    srcImg: p.element.isRequired,
+    alt: p.string,
+    description: p.string.isRequired,
+    hrefCode: p.element.isRequired,
+    hrefPage: p.element.isRequired,
+    tecnologies: p.arrayOf({
+      src: p.element.isRequired,
+      alt: p.string
+    }
+  )})
+}
+

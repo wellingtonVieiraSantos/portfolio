@@ -7,7 +7,7 @@ import RespMenu from "../../components/RespMenu"
 
 import { useRef, useState } from "react"
 
-const Home = () => {
+const App = () => {
 
   const [isOpen, setIsOpen] = useState(false)
   const [isCopy, setIsCopy] = useState(false)
@@ -45,4 +45,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default App

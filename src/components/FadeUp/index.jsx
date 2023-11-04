@@ -2,6 +2,8 @@ import { motion, useAnimation, useInView } from "framer-motion"
 
 import { useEffect, useRef } from 'react'
 
+import p from 'prop-types'
+
 const FadeUp = ({children}) => {
 
   const ref = useRef(null)
@@ -36,3 +38,7 @@ const FadeUp = ({children}) => {
 }
 
 export default FadeUp
+
+FadeUp.propTypes = {
+  children: p.node.isRequired
+}

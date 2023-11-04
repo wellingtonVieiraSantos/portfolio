@@ -1,5 +1,6 @@
-
 import { motion } from "framer-motion"
+
+import p from 'prop-types'
 
 const RespMenu = ({handleMenu}) => {
   const variants={
@@ -64,3 +65,7 @@ const RespMenu = ({handleMenu}) => {
 }
 
 export default RespMenu
+
+RespMenu.propTypes = {
+  handleMenu: p.func.isRequired
+}

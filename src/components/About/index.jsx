@@ -3,7 +3,7 @@ import FadeUp from "../FadeUp"
 const About = () => {
 
   const tecnologies = {
-    'focus':['HTML', 'CSS', 'JavaScript', 'React.js', 'GitHub', 'API Restfull'],
+    'focus':['HTML', 'CSS', 'JavaScript', 'React.js', 'Git', 'GitHub', 'API Restfull'],
     'seen':['PHP', 'Java', 'Python', 'Node.js', 'Express', 'Sql DB', 'NoSql DB']
   }
 
