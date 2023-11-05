@@ -6,8 +6,8 @@ const Contact = ({ handleCopy, text, isCopy}) => {
   return (
     <section className='bg-slate-950 flex text-slate-100' id='contact'>
       <div className='w-[min(1000px,100%)] flex flex-col p-5 gap-4 m-auto'>
-        <h2 className='text-4xl text-secondary font-bold'>Contact</h2>
-        <p>I can send you an email or, if you prefer, you can reach out to me through social media.</p>
+        <h2 className='text-4xl text-secondary font-bold'>Contato</h2>
+        <p>Você pode entrar em contato comigo pelo meu email abaixo, ou se preferir me contate pelas redes sociais.</p>
         {isCopy ?
           <div
             onClick={handleCopy}

@@ -11,29 +11,27 @@ const About = () => {
     <section className='bg-slate-950 flex text-slate-100 ' id='about'>
       <div className='flex flex-col p-5 w-[min(1000px,100%)] m-auto'>
         <FadeUp>
-          <h2 className='text-4xl text-secondary font-bold'>About</h2>
+          <h2 className='text-4xl text-secondary font-bold'>Sobre mim</h2>
         </FadeUp>
-        <div className='p-4 sm:text-xl text-justify'>
+        <div className='px-2 py-6 sm:text-xl text-justify'>
           <FadeUp>
-            <p className='mb-4'>Hi, my name is Wellington.</p>
+            <p className='mb-4'>Meu nome é Wellington.</p>
           </FadeUp>
           <FadeUp>
-            <p className='mb-4'>I'm a front-end developer, primarily focused on React.js.
-              I've been studying and working as a freelancer for about a year now.</p>
+            <p className='mb-4'>Sou um desenvolvedor front-end, meu foco de trabalho e estudo é React.js.</p>
           </FadeUp>
           <FadeUp>
-            <p className='mb-4'>I have a degree in mathematics, but when I discovered programming, I fell in love with it, which is why I'm transitioning to a career in this field.</p>
+            <p className='mb-4'>Trabalho como freelancer a quase seis meses.</p>
           </FadeUp>
           <FadeUp>
-            <p className='mb-4'>I started by studying back-end technologies like Java, PHP, and SQL databases, and then I got into front-end development, learning HTML, CSS, and JavaScript.
-              Eventually, I delved into React, and I've become very dedicated to learning everything about front-end development, including both well-established libraries and emerging technologies.</p>
+            <p className='mb-4'>Tenho formação superior em matemática e estou em transição de carreira para a área de programação.</p>
           </FadeUp>
           <FadeUp>
-            <p>Let's work together and exchange experiences.</p>
+            <p>Vamos trabalhar juntos e trocar experiências.</p>
           </FadeUp>
         </div>
         <FadeUp>
-          <h3 className='text-lg font-bold '>Technologies ( <span className="text-secondary">focused</span> ):</h3>
+          <h3 className='text-lg font-bold '>Tecnologias ( <span className="text-secondary">meu foco</span> ):</h3>
         </FadeUp>
         <FadeUp>
           <div className='w-full flex p-3 flex-wrap text-slate-200 font-bold'>
@@ -43,7 +41,7 @@ const About = () => {
           </div>
         </FadeUp>
         <FadeUp>
-          <h3 className='text-lg font-bold'>Technologies ( <span className="text-secondary">studied</span> ):</h3>
+          <h3 className='text-lg font-bold'>Tecnologias ( <span className="text-secondary">tenho noções</span> ):</h3>
         </FadeUp>
         <FadeUp>
           <div className='w-full flex p-3 flex-wrap text-slate-200 font-bold'>
@@ -58,3 +56,5 @@ const About = () => {
 }
 
 export default About
+
+/* obs: fazer as tecnologias como botões saiba mais */

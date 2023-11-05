@@ -4,7 +4,7 @@ import p from 'prop-types'
 
 const NavBar = ({handleMenu, isOpen}) => {
 
-  const menu = ['Home', 'About', 'Portfolio', 'Contact']
+  const menu = ['Home', 'Sobre', 'Portfolio', 'Contato']
 
   return (
     <nav className="w-full h-20 text-secondary font-bold bg-slate-900

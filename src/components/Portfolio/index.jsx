@@ -23,13 +23,13 @@ const Portfolio = () => {
         <FadeUp>
           <h2 className='text-4xl text-secondary font-bold p-5'>Portfolio</h2>
         </FadeUp>
-          <div className='grid grid-cols-main gap-10'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
           <FadeUp>
               <CardPortfolio
-                title='Weather App'
+                title='App Clima'
                 srcImg={weather}
-                alt='weather cover'
-                description='Simple responsive weather app by open-meteo'
+                alt='clima cover'
+                description='App de previsão do tempo simples e responsivo para treino de api e json, usando a api do open-meteo.'
                 hrefCode='https://github.com/wellingtonVieiraSantos/weather-app'
                 hrefPage='https://weather-app-delta-amber.vercel.app'
                 tecnologies={[
@@ -41,10 +41,10 @@ const Portfolio = () => {
             </FadeUp>
             <FadeUp>
               <CardPortfolio
-                title='Portuguese Quiz'
+                title='Quiz'
                 srcImg={quiz}
-                alt='portugues quiz cover'
-                description='Portuguese conjunctions quiz game with react.js, react-router-dom and tailwindcss'
+                alt='quiz cover'
+                description='Quiz sobre conjunções da lingua portuguesa, criada para auxiliar candidatos a professor a estudarem para o concurso.'
                 hrefCode='https://github.com/wellingtonVieiraSantos/quiz-react'
                 hrefPage='https://quiz-react-ton.vercel.app'
                 tecnologies={
@@ -60,7 +60,7 @@ const Portfolio = () => {
                 title='Snake Game'
                 srcImg={snakegame}
                 alt='snake game cover'
-                description='Old cell phone snake game done with html, css and js'
+                description='Famoso jogo da cobrinha de celulares antigos, feito sem auxílio de libs, apenas js puro.'
                 hrefCode='https://github.com/wellingtonVieiraSantos/snake-game'
                 hrefPage='http://wellingtonvieirasantos.github.io/snake-game/'
                 tecnologies={[
@@ -75,13 +75,14 @@ const Portfolio = () => {
                 title='Pokedex'
                 srcImg={pokedex}
                 alt='pokedex cover'
-                description='Pokedex project using html, css, js and pokeapi.'
+                description='Pokedex simples criada para treinar integração com api e estudo de json, com o auxílio da famosa pokeapi.'
                 hrefCode='https://github.com/wellingtonVieiraSantos/pokedex'
                 hrefPage='https://pokedex-i4xtzv95l-wellingtonvieirasantos.vercel.app'
                 tecnologies={[
                   {'src':html, 'alt':'HTML'},
                   {'src':css, 'alt':'CSS'},
-                  {'src':js, 'alt': 'JavaScript'}
+                  {'src':js, 'alt': 'JavaScript'},
+                  {'src':api, 'alt': 'Api'}
                 ]}
               />
             </FadeUp>

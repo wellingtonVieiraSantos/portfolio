@@ -8,9 +8,9 @@ const CardPortfolio = (props) => {
   return (
     <div className='p-2 flex flex-col gap-3'>
       <div className='aspect-square overflow-hidden'>
-        <img src={props.srcImg} alt={props.alt} className=''/>
+        <img src={props.srcImg} alt={props.alt} className='m-auto'/>
       </div>
-      <div className='flex justify-between items-center text-2xl text-secondary/60'>
+      <div className='flex justify-between items-center text-3xl text-white'>
         <h3>{props.title}</h3>
         <div className='flex gap-2 '>
           <a href={props.hrefCode} target='_blank' rel='author' className='hover:text-secondary'>
@@ -22,10 +22,11 @@ const CardPortfolio = (props) => {
         </div>
       </div>
       <p className='sm:text-xl'>{props.description}</p>
-      <div className='flex gap-5 justify-end items-center'>
+      <div className='flex gap-5  items-center'>
+        <span className='text-lg'>Tec. usadas:</span>
         {props.tecnologies.map(tec =>(
           <span datatype={tec.alt} key={tec.src}
-          className='w-7 text-slate-200 font-bold relative after:absolute hover:after:content-[attr(datatype)]
+          className='w-7 font-bold relative after:absolute hover:after:content-[attr(datatype)]
           hover:after:border after:border-secondary after:rounded-lg after:p-2 after:right-0 after:mt-3 hover:after:bg-slate-950 '>
             <img src={tec.src} alt={`${tec.alt} icon`} />
           </span>
