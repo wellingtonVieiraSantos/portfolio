@@ -8,8 +8,8 @@ const About = () => {
   }
 
   return (
-    <section className='bg-slate-950 flex text-slate-100 ' id='about'>
-      <div className='flex flex-col p-5 w-[min(1000px,100%)] m-auto'>
+    <section className=' bg-slate-950 flex text-slate-100 py-20' id='sobre'>
+      <div className='flex flex-col p-5 w-[min(1024px,100%)] m-auto'>
         <FadeUp>
           <h2 className='text-4xl text-secondary font-bold'>Sobre mim</h2>
         </FadeUp>
@@ -34,9 +34,9 @@ const About = () => {
           <h3 className='text-lg font-bold '>Tecnologias ( <span className="text-secondary">meu foco</span> ):</h3>
         </FadeUp>
         <FadeUp>
-          <div className='w-full flex p-3 flex-wrap text-slate-200 font-bold'>
+          <div className='w-full flex p-3 flex-wrap gap-4 text-slate-200 font-bold'>
             {tecnologies.focus && tecnologies.focus.map(tec => (
-              <span className='border border-secondary p-2 m-2 shadow-main shadow-secondary rounded-lg cursor-default' key={tec}>{tec}</span>
+              <span className='border border-secondary py-2 px-4 shadow-main shadow-secondary rounded-lg cursor-default' key={tec}>{tec}</span>
             ))}
           </div>
         </FadeUp>
@@ -44,9 +44,9 @@ const About = () => {
           <h3 className='text-lg font-bold'>Tecnologias ( <span className="text-secondary">tenho noções</span> ):</h3>
         </FadeUp>
         <FadeUp>
-          <div className='w-full flex p-3 flex-wrap text-slate-200 font-bold'>
+          <div className='w-full flex p-3 flex-wrap gap-4 text-slate-200 font-bold'>
             {tecnologies.seen && tecnologies.seen.map(tec => (
-              <span className='border border-secondary p-2 m-2 shadow-main shadow-secondary rounded-lg cursor-default' key={tec}>{tec}</span>
+              <span className='border border-secondary py-2 px-4 shadow-main shadow-secondary rounded-lg cursor-default' key={tec}>{tec}</span>
             ))}
           </div>
         </FadeUp>

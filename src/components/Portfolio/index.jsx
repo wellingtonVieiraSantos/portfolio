@@ -18,8 +18,8 @@ const Portfolio = () => {
 
   //criar integração com api do github posteriormente
   return (
-    <section className='bg-slate-900 text-slate-100 pb-10' id='portfolio'>
-      <div className='w-[min(1000px,100%)] flex flex-col m-auto'>
+    <section className='bg-slate-900 text-slate-100 py-20' id='portfolio'>
+      <div className='w-[min(1024px,100%)] flex flex-col m-auto'>
         <FadeUp>
           <h2 className='text-4xl text-secondary font-bold p-5'>Portfolio</h2>
         </FadeUp>

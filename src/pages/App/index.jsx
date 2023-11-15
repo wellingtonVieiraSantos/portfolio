@@ -31,16 +31,16 @@ const App = () => {
   return (
     <div className=" bg-slate-900 flex flex-col">
       <NavBar handleMenu={handleMenu} isOpen={isOpen}/>
-        {isOpen ?
-          <RespMenu handleMenu={handleMenu}/> :
-          <main className="flex flex-col">
-            <Landing/>
-            <About/>
-            <Portfolio/>
-            <Contact handleCopy={handleCopy} text={text} isCopy={isCopy}/>
-            <div className='h-10 bg-slate-900 flex justify-center items-center text-sm text-slate-200'>Created by Ton</div>
-          </main>
-        }
+      {isOpen ?
+        <RespMenu handleMenu={handleMenu}/> :
+        <main className="flex flex-col">
+          <Landing/>
+          <About/>
+          <Portfolio/>
+          <Contact handleCopy={handleCopy} text={text} isCopy={isCopy}/>
+          <div className='h-10 bg-slate-900 flex justify-center items-center text-sm text-slate-200'>Created by Ton</div>
+        </main>
+      }
     </div>
   )
 }

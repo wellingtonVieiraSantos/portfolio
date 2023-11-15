@@ -8,7 +8,7 @@ const NavBar = ({handleMenu, isOpen}) => {
 
   return (
     <nav className="w-full h-20 text-secondary font-bold bg-slate-900
-      text-lg flex justify-between items-center sticky top-0 left-0 md:bg-transparent md:backdrop-blur z-20 md:pr-4">
+      text-lg flex justify-between md:justify-around items-center sticky top-0 left-0 md:bg-transparent md:backdrop-blur z-20 md:pr-4">
       <a href="#home">
         <div className="px-2 aspect-square flex items-center justify-between drop-shadow-main">
           <span>&#60;</span>

@@ -6,23 +6,13 @@ import p from 'prop-types'
 const CardPortfolio = (props) => {
 
   return (
-    <div className='p-2 flex flex-col gap-3'>
+    <div className='p-2 flex flex-col gap-5'>
       <div className='aspect-square overflow-hidden'>
         <img src={props.srcImg} alt={props.alt} className='m-auto'/>
       </div>
-      <div className='flex justify-between items-center text-3xl text-white'>
-        <h3>{props.title}</h3>
-        <div className='flex gap-2 '>
-          <a href={props.hrefCode} target='_blank' rel='author' className='hover:text-secondary'>
-            <FaGithub/>
-          </a>
-          <a href={props.hrefPage} target='_blank' rel='author' className='hover:text-secondary'>
-            <BiLinkExternal/>
-          </a>
-        </div>
-      </div>
+      <h3 className='text-3xl text-white'>{props.title}</h3>
       <p className='sm:text-xl'>{props.description}</p>
-      <div className='flex gap-5  items-center'>
+      <div className='flex gap-5 items-center my-5'>
         <span className='text-lg'>Tec. usadas:</span>
         {props.tecnologies.map(tec =>(
           <span datatype={tec.alt} key={tec.src}
@@ -32,6 +22,16 @@ const CardPortfolio = (props) => {
           </span>
         ))}
       </div>
+      <div className='flex gap-4 mt-3 font-bold'>
+          <a href={props.hrefCode} target='_blank' rel='author' className='hover:text-secondary hover:border-slate-200 shadow-main shadow-secondary hover:shadow-slate-200 transition-all flex items-center gap-2 border border-secondary rounded-lg py-2 px-4'>
+            <FaGithub className='text-2xl'/>
+            <span>Código</span>
+          </a>
+          <a href={props.hrefPage} target='_blank' rel='author' className='hover:text-secondary hover:border-slate-200 shadow-main shadow-secondary hover:shadow-slate-200 transition-all flex items-center gap-2 border border-secondary rounded-lg py-2 px-4'>
+            <BiLinkExternal className='text-2xl'/>
+            <span>Página</span>
+          </a>
+        </div>
     </div>
   )
 }

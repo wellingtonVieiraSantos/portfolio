@@ -31,7 +31,7 @@ const RespMenu = ({handleMenu}) => {
             animate='visibleLeft'
             transition={{duration: .5, delay: .50}}>
           <li className="w-72 flex justify-center border border-secondary px-6 py-3 shadow-main shadow-secondary rounded-lg">
-            <a href="#about" className="flex items-center gap-3">
+            <a href="#sobre" className="flex items-center gap-3">
               <span>&#60;</span><span className="text-3xl text-secondary">Sobre</span><span>/&#62;</span>
             </a>
           </li>
@@ -53,7 +53,7 @@ const RespMenu = ({handleMenu}) => {
             animate='visible'
             transition={{duration: .5, delay: 1}}>
             <li className="w-72 flex justify-center border border-secondary px-6 py-3 shadow-main shadow-secondary rounded-lg">
-              <a href="#contact" className="flex items-center gap-3">
+              <a href="#contato" className="flex items-center gap-3">
                 <span>&#60;</span><span className="text-3xl text-secondary">Contato</span><span>/&#62;</span>
               </a>
             </li>
