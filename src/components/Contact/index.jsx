@@ -31,6 +31,6 @@ export default Contact
 
 Contact.propTypes = {
   handleCopy: p.func.isRequired,
-  text: p.element.isRequired,
+  text: p.object.isRequired,
   isCopy: p.bool.isRequired
 }

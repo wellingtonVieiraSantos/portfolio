@@ -14,7 +14,7 @@ const Landing = () => {
           </h1>
           <div className="flex gap-5 font-bold">
             <a href="https://linkedin.com/in/wellingtonsantos2022/" target='_blank' rel='external'
-              className="w-24 sm:w-40 border border-secondary px-4 py-2 shadow-main shadow-secondary flex justify-center items-center text-lg gap-2 rounded-lg hover:text-secondary hover:border-slate-200 hover:shadow-slate-200 transition-all">
+              className="w-24 sm:w-40 border border-blue-600 px-4 py-2 shadow-main shadow-blue-600 flex justify-center items-center text-lg gap-2 rounded-lg hover:text-blue-600 hover:border-slate-200 hover:shadow-slate-200 transition-all">
               <FaLinkedin className='text-2xl'/>
               <span className="hidden sm:block">LinkedIn</span>
             </a>

@@ -27,7 +27,7 @@ const CardPortfolio = (props) => {
             <FaGithub className='text-2xl'/>
             <span>Código</span>
           </a>
-          <a href={props.hrefPage} target='_blank' rel='author' className='hover:text-secondary hover:border-slate-200 shadow-main shadow-secondary hover:shadow-slate-200 transition-all flex items-center gap-2 border border-secondary rounded-lg py-2 px-4'>
+          <a href={props.hrefPage} target='_blank' rel='author' className='hover:text-blue-600 hover:border-slate-200 shadow-main shadow-blue-600 hover:shadow-slate-200 transition-all flex items-center gap-2 border border-blue-600 rounded-lg py-2 px-4'>
             <BiLinkExternal className='text-2xl'/>
             <span>Página</span>
           </a>
